@@ -1,0 +1,6 @@
+[submodule "Assets/LockStepLogic"]
+	path = Assets/LockStepLogic
+	url = git@github.com:Luojingqi/LockStepLogic.git
+[submodule "Assets/FrameMessage"]
+	path = Assets/FrameMessage
+	url = git@github.com:Luojingqi/FrameMessage.git

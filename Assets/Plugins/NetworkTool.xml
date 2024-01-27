@@ -1,0 +1,281 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NetworkTool</name>
+    </assembly>
+    <members>
+        <member name="T:NetworkTool.MessageReflection">
+            <summary>Holder for reflection information generated from Message.proto</summary>
+        </member>
+        <member name="P:NetworkTool.MessageReflection.Descriptor">
+            <summary>File descriptor for Message.proto</summary>
+        </member>
+        <member name="F:NetworkTool.Message.HeadFieldNumber">
+            <summary>Field number for the "Head" field.</summary>
+        </member>
+        <member name="P:NetworkTool.Message.Head">
+             <summary>
+            消息头
+             </summary>
+        </member>
+        <member name="F:NetworkTool.Message.BodyFieldNumber">
+            <summary>Field number for the "Body" field.</summary>
+        </member>
+        <member name="P:NetworkTool.Message.Body">
+             <summary>
+            消息体
+             </summary>
+        </member>
+        <member name="M:NetworkTool.Serialize.Tobyte(Google.Protobuf.IMessage,Google.Protobuf.IMessage)">
+            <summary>
+            对象序列化，打包为一个Message
+            </summary>
+        </member>
+        <member name="T:NetworkTool.TcpSocketClient">
+            <summary>
+            处理服务端逻辑
+            </summary>
+        </member>
+        <member name="P:NetworkTool.TcpSocketClient.HostSocket">
+            <summary>
+            与服务连接的服务端主Socket
+            </summary>
+        </member>
+        <member name="E:NetworkTool.TcpSocketClient.OutDebugItem">
+            <summary>
+            用于输出调试信息的事件
+            </summary>
+        </member>
+        <member name="E:NetworkTool.TcpSocketClient.AfterAccept">
+            <summary>
+            连接主机socket后事件
+            </summary>
+        </member>
+        <member name="E:NetworkTool.TcpSocketClient.AfterSend">
+            <summary>
+            消息发送后执行事件
+            </summary>
+        </member>
+        <member name="E:NetworkTool.TcpSocketClient.AfterReceive">
+            <summary>
+            消息接受后执行事件
+            </summary>
+        </member>
+        <member name="E:NetworkTool.TcpSocketClient.AfterClose">
+            <summary>
+            客户端关闭后执行事件
+            </summary>
+        </member>
+        <member name="P:NetworkTool.TcpSocketClient.BufferLength">
+            <summary>
+            消息接收缓存的长度
+            </summary>
+        </member>
+        <member name="M:NetworkTool.TcpSocketClient.#ctor(System.String,System.Int32)">
+            <summary>
+            按照输入的ip地址与端口绑定socket,根据输入ip的长度识别ipv4于ipv6
+            </summary>
+            <param ipv4或ipv6地址="ip"></param>
+            <param 用于监听链接的端口="endPoint"></param>
+            <param 用于输出调试信息的事件 = "outDebugItem"></param>
+        </member>
+        <member name="M:NetworkTool.TcpSocketClient.ReceiveThread">
+            <summary>
+            用于单独接受一个远程Socket消息的线程方法
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="M:NetworkTool.TcpSocketClient.Send(System.Byte[])">
+            <summary>
+            发送消息给服务器Socket
+            </summary>
+            <param name="bytes"></param>
+        </member>
+        <member name="M:NetworkTool.TcpSocketClient.Close">
+            <summary>
+            关闭Socket连接
+            </summary>
+        </member>
+        <member name="T:NetworkTool.TcpSocketServer">
+            <summary>
+            处理客户端逻辑
+            </summary>
+        </member>
+        <member name="P:NetworkTool.TcpSocketServer.HostSocket">
+            <summary>
+            服务端主Socket
+            </summary>
+        </member>
+        <member name="P:NetworkTool.TcpSocketServer.RemoteSocketDic">
+            <summary>
+            服务端已连接的远程socket集合
+            </summary>
+        </member>
+        <member name="E:NetworkTool.TcpSocketServer.OutDebugItem">
+            <summary>
+            用于输出调试信息的事件
+            </summary>
+        </member>
+        <member name="E:NetworkTool.TcpSocketServer.AfterAccept">
+            <summary>
+            远程socket连接后事件
+            </summary>
+        </member>
+        <member name="E:NetworkTool.TcpSocketServer.AfterSend">
+            <summary>
+            消息发送后执行事件
+            </summary>
+        </member>
+        <member name="E:NetworkTool.TcpSocketServer.AfterReceive">
+            <summary>
+            消息接受后执行事件
+            </summary>
+        </member>
+        <member name="E:NetworkTool.TcpSocketServer.AfterClose">
+            <summary>
+            服务器关闭后执行事件
+            </summary>
+        </member>
+        <member name="P:NetworkTool.TcpSocketServer.BufferLength">
+            <summary>
+            消息接收缓存的长度
+            </summary>
+        </member>
+        <member name="M:NetworkTool.TcpSocketServer.#ctor(System.String,System.Int32,System.Int32)">
+            <summary>
+            按照输入的ip地址与端口绑定socket,根据输入ip的长度识别ipv4于ipv6
+            </summary>
+            <param ipv4或ipv6地址="ip"></param>
+            <param 用于监听链接的端口="endPoint"></param>
+            <param 最大可连接数量 ="maxListen"></param>
+        </member>
+        <member name="M:NetworkTool.TcpSocketServer.StartServer">
+            <summary>
+            开启服务器
+            </summary>
+        </member>
+        <member name="M:NetworkTool.TcpSocketServer.AcceptThread">
+            <summary>
+            用于监听多客户端连接的线程方法
+            </summary>
+        </member>
+        <member name="M:NetworkTool.TcpSocketServer.ReceiveThread(System.Object)">
+            <summary>
+            用于单独接受一个远程Socket消息的线程方法
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="M:NetworkTool.TcpSocketServer.Send(System.Net.Sockets.Socket,System.Byte[])">
+            <summary>
+            发送消息给某个特定远程Socket
+            </summary>
+            <param name="bytes"></param>
+            <param name="remoteSocket"></param>
+        </member>
+        <member name="M:NetworkTool.TcpSocketServer.SendAll(System.Byte[])">
+            <summary>
+            消息广播
+            </summary>
+        </member>
+        <member name="M:NetworkTool.TcpSocketServer.Remove(System.Net.Sockets.Socket)">
+            <summary>
+            断开,移除某个远程Socket
+            </summary>
+            <param name="remoteSocket"></param>
+        </member>
+        <member name="M:NetworkTool.TcpSocketServer.CloseSocket">
+            <summary>
+            断开所有socket链接，关闭服务器socket
+            </summary>
+        </member>
+        <member name="M:NetworkTool.TcpSocketServer.Finalize">
+            <summary>
+            服务端关闭，清除所有socket
+            </summary>
+        </member>
+        <member name="T:NetworkTool.ThreadManager">
+            <summary>
+            线程管理器，会开启或唤醒一个线程去执行指定的回调方法
+            </summary>
+        </member>
+        <member name="M:NetworkTool.ThreadManager.QueueUserWorkItem(System.Threading.WaitCallback,System.Object,System.Int32)">
+            <summary>
+            静态方法，开启或唤醒一个线程去执行指定的回调方法
+            </summary>
+            <param name="waitCallback">委托实例</param>
+            <param name="obj">传递给回调方法的参数</param>
+            <param name="timeOut">当没有可用的线程时的等待时间，
+            以毫秒为单位</param>
+            <returns></returns>
+        </member>
+        <member name="M:NetworkTool.ThreadManager.InitThreadList(System.Int32)">
+            <summary>
+            创建add个线程填充池
+            </summary>
+        </member>
+        <member name="M:NetworkTool.MyThread.Start(System.Threading.WaitCallback,System.Object,System.Boolean)">
+            <summary>
+            开启新线程或唤醒线程，去执行回调方法
+            </summary>
+            <param name="w">用回调方法实例化了的委托实例</param>
+            <param name="o">传递给回调方法的参数值</param>
+            <param name="isSuspend">true 表示线程为挂起状态，
+            false 则表示线程还没创建</param>
+        </member>
+        <member name="M:NetworkTool.MyThread.ThreadProc">
+            <summary>
+            线程执行的方法
+            </summary>
+        </member>
+        <member name="T:NetworkTool.UdpSocket">
+            <summary>
+            通过Udp发送接受消息
+            </summary>
+        </member>
+        <member name="P:NetworkTool.UdpSocket.LocalSocket">
+            <summary>
+            本机Socket,用于监听
+            </summary>
+        </member>
+        <member name="E:NetworkTool.UdpSocket.OutDebugItem">
+            <summary>
+            用于输出调试信息的事件
+            </summary>
+        </member>
+        <member name="E:NetworkTool.UdpSocket.AfterSend">
+            <summary>
+            消息发送后执行事件
+            </summary>
+        </member>
+        <member name="E:NetworkTool.UdpSocket.AfterReceive">
+            <summary>
+            消息接受后执行事件
+            </summary>
+        </member>
+        <member name="E:NetworkTool.UdpSocket.AfterClose">
+            <summary>
+            客户端关闭后执行事件
+            </summary>
+        </member>
+        <member name="M:NetworkTool.UdpSocket.Receive(System.String,System.Int32)">
+            <summary>
+            绑定一个本地IP端口进行监听消息
+            </summary>
+            <param 本地IP="localIP"></param>
+            <param 端口="endPoint"></param>
+        </member>
+        <member name="M:NetworkTool.UdpSocket.Send(System.Byte[],System.String,System.Int32)">
+            <summary>
+            发送消息给指定IP端口
+            </summary>
+            <param 远程IP="remoteIP"></param>
+            <param 端口="endPoint"></param>
+            <param 数据="bytes"></param>
+        </member>
+        <member name="M:NetworkTool.UdpSocket.Close">
+            <summary>
+            关闭Socket
+            </summary>
+        </member>
+    </members>
+</doc>
