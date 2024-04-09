@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657928, g: 0.49641335, b: 0.57481956, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -110,8 +110,8 @@ NavMeshSettings:
     agentHeight: 2
     agentSlope: 45
     agentClimb: 0.4
-    ledgeDropHeight: 0
-    maxJumpAcrossDistance: 0
+    ledgeDropHeight: 10000
+    maxJumpAcrossDistance: 10000
     minRegionArea: 2
     manualCellSize: 0
     cellSize: 0.16666667
@@ -123,6 +123,1945 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &199113317
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 199113324}
+  - component: {fileID: 199113323}
+  - component: {fileID: 199113322}
+  - component: {fileID: 199113328}
+  - component: {fileID: 199113331}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &199113322
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199113317}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &199113323
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199113317}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &199113324
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199113317}
+  m_LocalRotation: {x: 0, y: 0, z: -0.17635547, w: 0.9843266}
+  m_LocalPosition: {x: 0, y: -2, z: 0}
+  m_LocalScale: {x: 50, y: 1, z: 10}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
+--- !u!114 &199113328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199113317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7106014a5c240a54aae14ae43c949e4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: position
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: -8192
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: localPosition
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: -8192
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: rotation
+      Entry: 7
+      Data: Fix64Physics.Data.FixQuaternion, Assembly-CSharp
+    - Name: w
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4033
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: -723
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: localRotation
+      Entry: 7
+      Data: Fix64Physics.Data.FixQuaternion, Assembly-CSharp
+    - Name: w
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4033
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: -723
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: localScale
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: lossyScale
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: parent
+      Entry: 6
+      Data: 
+    - Name: childList
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[TransformReplace.IFixTransform,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+--- !u!114 &199113331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199113317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6379b7c0d7b88848b80263795d3dcd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: FixCollider
+      Entry: 7
+      Data: 0|Fix64Physics.Collision.FixBoxCollider, Assembly-CSharp
+    - Name: RayLayer
+      Entry: 7
+      Data: 1|System.Collections.Generic.HashSet`1[[System.Int32, mscorlib]], System.Core
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: IsTrigger
+      Entry: 5
+      Data: false
+    - Name: fixRigidbody
+      Entry: 6
+      Data: 
+    - Name: fixTransform
+      Entry: 6
+      Data: 
+    - Name: volume
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: centerOffset
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: size
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 204800
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 40960
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  auto: 1
+--- !u!1 &340648128
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 340648129}
+  - component: {fileID: 340648131}
+  - component: {fileID: 340648130}
+  m_Layer: 0
+  m_Name: GameObject (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &340648129
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340648128}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 635630170}
+  - {fileID: 1622131294}
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &340648130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340648128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87590075857fa284db677db553072748, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: _fixRigidbody
+      Entry: 7
+      Data: 0|Fix64Physics.FixRigidbody, Assembly-CSharp
+    - Name: IsStatic
+      Entry: 5
+      Data: false
+    - Name: mass
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 8192
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: velocity
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: acceleration
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: impulse
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: useGravity
+      Entry: 5
+      Data: true
+    - Name: linearDrag
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4075
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: rotateDrag
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4075
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: netForce
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: -40169
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: angularAcceleration
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: angularVelocity
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: maxAngularVelocity
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 28672
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: inertia
+      Entry: 7
+      Data: Fix64Physics.Data.FixMatrix3x3, Assembly-CSharp
+    - Name: m00
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m01
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m02
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m10
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m11
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m12
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m20
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m21
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m22
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: netTorque
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: angularImpulse
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: rotationLimitation
+      Entry: 7
+      Data: Fix64Physics.Data.FixMatrix3x3, Assembly-CSharp
+    - Name: m00
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m01
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m02
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m10
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m11
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m12
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m20
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m21
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m22
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: positionLimitation
+      Entry: 7
+      Data: Fix64Physics.Data.FixMatrix3x3, Assembly-CSharp
+    - Name: m00
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m01
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m02
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m10
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m11
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m12
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m20
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m21
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m22
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: centroid
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: elasticCoefficient
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 819
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: frictionalCoefficient
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 1638
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: IsCanSleep
+      Entry: 5
+      Data: true
+    - Name: IsSleep
+      Entry: 5
+      Data: false
+    - Name: IsRun
+      Entry: 5
+      Data: true
+    - Name: CanCollider
+      Entry: 5
+      Data: true
+    - Name: colliderList
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[Fix64Physics.Collision.FixCollider,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position0
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: rotation0
+      Entry: 7
+      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position1
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: rotation1
+      Entry: 7
+      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+--- !u!114 &340648131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340648128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7106014a5c240a54aae14ae43c949e4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 635630166}
+    - {fileID: 1622131290}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: position
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: -6144
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: localPosition
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: -6144
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: rotation
+      Entry: 7
+      Data: Fix64Physics.Data.FixQuaternion, Assembly-CSharp
+    - Name: w
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: localRotation
+      Entry: 7
+      Data: Fix64Physics.Data.FixQuaternion, Assembly-CSharp
+    - Name: w
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: localScale
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: lossyScale
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: parent
+      Entry: 6
+      Data: 
+    - Name: childList
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[TransformReplace.IFixTransform,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+--- !u!1 &635630164
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 635630170}
+  - component: {fileID: 635630169}
+  - component: {fileID: 635630168}
+  - component: {fileID: 635630166}
+  - component: {fileID: 635630172}
+  m_Layer: 0
+  m_Name: Sphere
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &635630166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635630164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7106014a5c240a54aae14ae43c949e4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 340648131}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: position
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: -4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: localPosition
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 2048
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: rotation
+      Entry: 7
+      Data: Fix64Physics.Data.FixQuaternion, Assembly-CSharp
+    - Name: w
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: localRotation
+      Entry: 7
+      Data: Fix64Physics.Data.FixQuaternion, Assembly-CSharp
+    - Name: w
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: localScale
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: lossyScale
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: parent
+      Entry: 10
+      Data: 0
+    - Name: childList
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[TransformReplace.IFixTransform,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+--- !u!23 &635630168
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635630164}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &635630169
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635630164}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &635630170
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635630164}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 340648129}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &635630172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635630164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6379b7c0d7b88848b80263795d3dcd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: FixCollider
+      Entry: 7
+      Data: 0|Fix64Physics.Collision.FixSphereCollider, Assembly-CSharp
+    - Name: RayLayer
+      Entry: 7
+      Data: 1|System.Collections.Generic.HashSet`1[[System.Int32, mscorlib]], System.Core
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: IsTrigger
+      Entry: 5
+      Data: false
+    - Name: fixRigidbody
+      Entry: 6
+      Data: 
+    - Name: fixTransform
+      Entry: 6
+      Data: 
+    - Name: volume
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: centerOffset
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: r
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 2048
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  auto: 1
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -209,14 +2148,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.19638543, y: -0.8025126, z: 0.37421775, w: 0.42114997}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 50, y: -124.62, z: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,11 +2232,1743 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.1970345, y: 0.30418733, z: -0.06441249, w: 0.9297841}
+  m_LocalPosition: {x: -5.4972544, y: 7.075005, z: -16.308636}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1117613304
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1117613307}
+  - component: {fileID: 1117613306}
+  - component: {fileID: 1117613305}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1117613305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117613304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1117613306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117613304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1117613307
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117613304}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1213514828
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1213514835}
+  - component: {fileID: 1213514834}
+  - component: {fileID: 1213514833}
+  - component: {fileID: 1213514831}
+  - component: {fileID: 1213514830}
+  - component: {fileID: 1213514829}
+  m_Layer: 0
+  m_Name: Sphere
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1213514829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213514828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87590075857fa284db677db553072748, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: _fixRigidbody
+      Entry: 7
+      Data: 0|Fix64Physics.FixRigidbody, Assembly-CSharp
+    - Name: IsStatic
+      Entry: 5
+      Data: false
+    - Name: mass
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: velocity
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: acceleration
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: impulse
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: useGravity
+      Entry: 5
+      Data: true
+    - Name: linearDrag
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4075
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: rotateDrag
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4075
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: netForce
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: -40169
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: angularAcceleration
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: angularVelocity
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: maxAngularVelocity
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 28672
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: inertia
+      Entry: 7
+      Data: Fix64Physics.Data.FixMatrix3x3, Assembly-CSharp
+    - Name: m00
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m01
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m02
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m10
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m11
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m12
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m20
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m21
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m22
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: netTorque
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: angularImpulse
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: rotationLimitation
+      Entry: 7
+      Data: Fix64Physics.Data.FixMatrix3x3, Assembly-CSharp
+    - Name: m00
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m01
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m02
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m10
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m11
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m12
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m20
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m21
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m22
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: positionLimitation
+      Entry: 7
+      Data: Fix64Physics.Data.FixMatrix3x3, Assembly-CSharp
+    - Name: m00
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m01
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m02
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m10
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m11
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m12
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m20
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m21
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m22
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: centroid
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: elasticCoefficient
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 1024
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: frictionalCoefficient
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 1365
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: IsCanSleep
+      Entry: 5
+      Data: true
+    - Name: IsSleep
+      Entry: 5
+      Data: false
+    - Name: IsRun
+      Entry: 5
+      Data: true
+    - Name: CanCollider
+      Entry: 5
+      Data: true
+    - Name: colliderList
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[Fix64Physics.Collision.FixCollider,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position0
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: rotation0
+      Entry: 7
+      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position1
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: rotation1
+      Entry: 7
+      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+--- !u!114 &1213514830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213514828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6379b7c0d7b88848b80263795d3dcd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: FixCollider
+      Entry: 7
+      Data: 0|Fix64Physics.Collision.FixSphereCollider, Assembly-CSharp
+    - Name: RayLayer
+      Entry: 7
+      Data: 1|System.Collections.Generic.HashSet`1[[System.Int32, mscorlib]], System.Core
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: IsTrigger
+      Entry: 5
+      Data: false
+    - Name: fixRigidbody
+      Entry: 6
+      Data: 
+    - Name: fixTransform
+      Entry: 6
+      Data: 
+    - Name: volume
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: centerOffset
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: r
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 2048
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  auto: 1
+--- !u!114 &1213514831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213514828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7106014a5c240a54aae14ae43c949e4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: position
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: -61440
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 28672
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: localPosition
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: -61440
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 28672
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: rotation
+      Entry: 7
+      Data: Fix64Physics.Data.FixQuaternion, Assembly-CSharp
+    - Name: w
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: localRotation
+      Entry: 7
+      Data: Fix64Physics.Data.FixQuaternion, Assembly-CSharp
+    - Name: w
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: localScale
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: lossyScale
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: parent
+      Entry: 6
+      Data: 
+    - Name: childList
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[TransformReplace.IFixTransform,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+--- !u!23 &1213514833
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213514828}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1213514834
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213514828}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1213514835
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213514828}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -15, y: 7, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1622131287
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1622131294}
+  - component: {fileID: 1622131293}
+  - component: {fileID: 1622131292}
+  - component: {fileID: 1622131290}
+  - component: {fileID: 1622131288}
+  m_Layer: 0
+  m_Name: Sphere (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1622131288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622131287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6379b7c0d7b88848b80263795d3dcd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: FixCollider
+      Entry: 7
+      Data: 0|Fix64Physics.Collision.FixSphereCollider, Assembly-CSharp
+    - Name: RayLayer
+      Entry: 7
+      Data: 1|System.Collections.Generic.HashSet`1[[System.Int32, mscorlib]], System.Core
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: IsTrigger
+      Entry: 5
+      Data: false
+    - Name: fixRigidbody
+      Entry: 6
+      Data: 
+    - Name: fixTransform
+      Entry: 6
+      Data: 
+    - Name: volume
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: centerOffset
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: r
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 2048
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  auto: 1
+--- !u!114 &1622131290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622131287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7106014a5c240a54aae14ae43c949e4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 340648131}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: position
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: -8192
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: localPosition
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: -2048
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: rotation
+      Entry: 7
+      Data: Fix64Physics.Data.FixQuaternion, Assembly-CSharp
+    - Name: w
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: localRotation
+      Entry: 7
+      Data: Fix64Physics.Data.FixQuaternion, Assembly-CSharp
+    - Name: w
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: localScale
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: lossyScale
+      Entry: 7
+      Data: Fix64Physics.Data.FixVector3, Assembly-CSharp
+    - Name: x
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: y
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: z
+      Entry: 7
+      Data: Fix64Physics.Data.Fix64, Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 4096
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: parent
+      Entry: 10
+      Data: 0
+    - Name: childList
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[TransformReplace.IFixTransform,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+--- !u!23 &1622131292
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622131287}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1622131293
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622131287}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1622131294
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622131287}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 340648129}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1645420291
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1645420293}
+  - component: {fileID: 1645420294}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1645420293
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645420291}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1645420294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645420291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5ea28b80f9b77042a841aa7ed3a93b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
